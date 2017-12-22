@@ -1,0 +1,31 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="detail">
+    <view>
+      <image style="width:42px;height:42px;" src="{{position.img}}"></image>
+      <navigator url="company/company?company={{company}}" hover-class="navigator-hover">
+        <input name="company" value="{{position.company}}" bindinput="companyInput" />
+      </navigator>
+    </view>
+    <view>
+      <text> 职位：</text>
+      <input name="position" value="{{position.position}}" bindinput="positionInput" />
+    </view>
+    <view>
+      <text> 邮箱：</text>{{position.email}}</view>
+    <view>
+      <text> 工作地点：</text>{{position.requrie}}</view>
+    <view>
+      <text> 薪水：</text>{{position.salary}}</view>
+    <view>
+      <text> 上传时间：</text>{{position.cTime}}</view>
+    <view>
+      <view>
+        <text> 职位描述：</text>
+      </view>
+      {{position.detail}}
+    </view>
+  </view>
+  <view class="submit">
+    <button formType="submit">投递简历</button>
+  </view>
+</form>

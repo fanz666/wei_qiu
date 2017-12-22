@@ -1,0 +1,41 @@
+.list{
+  width: 90%;
+  height: 60px;
+  margin:2% 5%;
+}
+.id{
+   display: none 
+}
+.list-item-left{
+  float: left;
+  width:70%;
+  font-size: 14px;
+  color: #aaa;
+}
+.list-item-right{
+  float: right;
+  width: 30%;
+  font-size: 12px;
+  color: #08f;
+}
+.i1{
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+}
+.edit{
+  float: left;
+  padding:20px 5px;
+}
+.del{
+  flex: right;
+  padding:20px 5px;
+}
+.add{
+  width: 80%;
+  font-size: 12px;
+  color: #ff5;
+  border: 1px solid #ff5;
+  background:#fff;
+
+}

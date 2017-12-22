@@ -1,0 +1,93 @@
+.signup{
+    width: 90%;
+    padding: 5%;
+    margin-top: 30rpx;
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20rpx;
+}
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center; 
+    border-bottom: 1rpx solid #eee; 
+    padding: 25rpx 0;
+    font-size: 1rem;
+    color: #888;
+}
+.item picker{
+    width: 100%;
+}
+.item view{
+  width: 100%;
+}
+.item text,.item view text{
+    height: 100%;
+    width: 35%;
+    display: flex; 
+    float: left;    
+    text-align: right   
+}
+.item input,.item view input{
+    height: 100%;
+    float: right;
+    text-align: right;
+    position: relative;
+}
+.citypicker{
+  position: fixed;
+  width: 100%;
+  padding: 5%;
+  z-index: 999;
+}
+.citybody {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  width: 90%;
+  height: 60%;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  color: #2FB42E;
+}
+picker-view-column{
+  text-align: center
+}
+.pickerJobIntention view,.pickerDate view,.pickerSalary view{
+    width: 60%;
+    float: right;
+    text-align: right;
+    position: relative;
+}
+
+.btn-area{
+  position: fixed;
+  top:80%;
+  width: 100%;
+  height: 20%;
+  background: #fff;
+}
+.btn-area button{
+  width: 70%;
+  color: #fff;
+  background: #4fa;
+  margin-top: 2.5%;
+}

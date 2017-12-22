@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<!--secrch 搜索-->
+<view class="search" bindtap="search">
+  <input type="text" class="search-input" placeholder-class="input-place" placeholder="搜索职位" />
+  <button class="search-btn">搜索</button>
+</view>
+<!--secrch 搜索-->
+
+<!--jobList start-->
+<template name="lists">
+  <navigator url="detail/detail?id={{id}}" hover-class="navigator-hover">
+    <view class="list-item list-item-left">
+      <image style="width:42px;height:42px;" src="{{img}}"></image>
+    </view>
+    <view class="list-item list-item-middle">
+      <view class="item i1">{{position}}</view>
+      <view class="item i2">{{company}}</view>
+      <view class="item i3"> {{cTime}}</view>
+    </view>
+    <view class="list-item list-item-right">
+      <view class="item i4">{{salary}}</view>
+      <view class="item i5">{{requrie}}</view>
+    </view>
+  </navigator>
+</template>
+<!--jobList end-->
+
+<!--输出循环 begin-->
+<view class="list" wx:for="{{jobList}}" wx:key="{{index}}">
+  <template is="lists" data="{{...item}}" />
+</view>
+<!--输出循环 end-->
+<view bindtap="loadMore" data-lastid="{{lastid}}" class="loadMore">加载更多</view>

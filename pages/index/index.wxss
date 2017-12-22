@@ -1,0 +1,77 @@
+/**index.wxss**/
+.search {
+  width: 90%;
+  margin: 0 5%; 
+  border: solid 1px #aaa;
+  border-radius: 5px;
+}
+
+.search-input {
+  width: 70%;
+  float: left;
+  height: 30px;
+}
+
+.search-btn {
+  width: 30%;
+  height: 30px;
+  font-size: 12px;
+}
+
+.list {
+  width: 90%;
+  margin: 0 5%; 
+  height: 80px;
+  background: #fff;
+}
+
+.list-item {
+  height: 120rpx;
+  text-align: center;
+  padding-top: 5px;
+  float: left;
+}
+
+.list-item-left {
+  width: 15%;
+}
+
+.list-item-right {
+  width: 30%;
+  line-height: 20px;
+}
+
+.list-item-middle {
+  width: 50%;
+  font-size: 158px;
+  text-align: left;
+}
+
+.i1 {
+  font-size: 15px;
+}
+
+.i2 {
+  font-size: 12px;
+}
+
+.i3 {
+  font-size: 14px;
+}
+
+.i4 {
+  font-size: 14px;
+  color: salmon;
+  font-weight: bold;
+}
+
+.i5 {
+  font-size: 14px;
+}
+
+.loadMore {
+  text-align: center;
+  margin: 30rpx;
+  color: #aaa;
+  font-size: 16px;
+}

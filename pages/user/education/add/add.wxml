@@ -1,0 +1,34 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="signup">
+    <!--学校名称-->
+    <view class="item school">
+        <text> 学校名称 </text>
+        <input name="school" bindinput="schoolInput"/> 
+    </view>
+    <!--专业名称-->
+    <view class="item specialities">
+        <text>专业名称</text>
+        <input name="specialities" bindinput="specialitiesInput"/>
+    </view>
+    <!--学历-->       
+     <view class="item qualifications">
+                <text>学历</text> 
+                 <input name="qualifications" bindinput="qualificationsInput" /> 
+    </view>   
+    <view class="item date">  
+        <picker mode="date" value="{{date}}" start="1970-01-01" end="2017-09-01" fields="day" bindchange="bindDateChange">  
+            <view class="pickerDate">
+                <text>毕业时间</text> 
+                 <input name="date" value="{{date}}" bindinput="dateInput"/> 
+            </view>             
+        </picker>  
+    </view>  
+
+</view>
+
+<view class="btn-area">
+  <button formType="submit">保存</button>
+</view>
+</form>
+<!--end form-->
+

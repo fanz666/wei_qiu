@@ -1,0 +1,54 @@
+.userinfo-avatar {
+  width: 100px;
+  height: 100px;
+}
+.item {
+  font-size: 12px;
+  color: #888;
+}
+
+.info_left{
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+.info_right{
+  float: right;
+  width: 50%;
+  height: 100px;
+}
+
+.info,.eduList,.expList{
+  width: 86%;
+  margin:2% 5%;
+  padding: 2%;
+  border: solid 1px #aaa;
+  }
+
+.list{
+  width: 100%;
+  margin: 2% 0;
+  border: solid 1px #aaa;
+  text-align: center;
+}
+.list-item{
+  width:100%;
+  font-size: 12px;
+  color: #aaa;
+}
+.eduTxt,.expTxt{
+  color: #fa0;
+}
+.i1,i11,i2,i21{
+  display:  flex;
+}
+.i1 view{
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.i11 view{
+  float: left;
+  width: 50%;
+  text-align: center;
+}

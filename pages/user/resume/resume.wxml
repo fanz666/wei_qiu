@@ -1,0 +1,22 @@
+<!--pages/user/resume/resume.wxml-->
+<view class="resume">
+    <view bindtap="infoClick" class="item">
+        <text class="tl"> 基本信息 </text>
+        <text class="t2">></text>
+    </view>
+
+    <view bindtap="educationClick" class="item">
+        <text class="tl">教育经历</text>
+        <text class="t2">></text>
+    </view>
+
+    <view bindtap="workClick" class="item">
+        <text class="tl">工作经历</text>
+        <text class="t2">></text>
+    </view>
+
+    <view bindtap="formClick" class="item">
+        <text class="tl">简历预览</text>
+        <text class="t2">></text>
+    </view>
+</view>

@@ -1,0 +1,64 @@
+.index-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 400rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 250rpx;
+  height: 250rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.userset {
+  width: 90%;
+  padding: 5%;
+  margin-top: 30rpx;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20rpx;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  padding: 25rpx 0;
+  font-size: 1rem;
+  color: #888;
+}
+
+.item text {
+  height: 100%;
+  display: flex;
+  float: left;
+  text-align: right;
+}
+
+.t1 {
+  float: left;
+}
+
+.t2 {
+  float: right;
+}

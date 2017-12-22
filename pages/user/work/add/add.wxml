@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="signup">
+    <!--公司名称-->
+    <view class="item company">
+        <text> 公司名称 </text>
+        <input name="company" bindinput="companyInput"/> 
+    </view>
+    <!--职位-->
+    <view class="item position">
+        <text>职位</text>
+        <input name="position" bindinput="positionInput"/>
+    </view>
+    <!--入职时间-->
+    <view class="item entry">  
+        <picker mode="date" value="{{entry}}" start="1970-01-01" end="2017-09-01" fields="day" bindchange="bindEntryChange">  
+            <view class="pickerEntry">
+                <text>入职时间</text> 
+                 <input name="entry" value="{{entry}}" bindinput="entryInput"/> 
+            </view>             
+        </picker>  
+    </view>  
+    <!--离职时间-->
+    <view class="item quit">  
+        <picker mode="date" value="{{quit}}" start="1970-01-01" end="2017-09-01" fields="day" bindchange="bindQuitChange">  
+            <view class="pickerQuit">
+                <text>离职时间</text> 
+                 <input name="quit" value="{{quit}}" bindinput="quitInput"/> 
+            </view>             
+        </picker>  
+    </view>  
+
+</view>
+
+<view class="btn-area">
+  <button formType="submit">保存</button>
+</view>
+</form>
+<!--end form-->
+

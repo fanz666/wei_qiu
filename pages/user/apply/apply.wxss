@@ -1,0 +1,17 @@
+.list{
+  width: 90%;
+  height: 60px;
+  margin:2% 5%;
+}
+.list-item-left{
+  float: left;
+  width:70%;
+  font-size: 14px;
+  color: #aaa;
+}
+.list-item-right{
+  float: right;
+  width: 30%;
+  font-size: 12px;
+  color: #08f;
+}

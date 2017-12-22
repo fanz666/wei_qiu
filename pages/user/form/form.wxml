@@ -1,0 +1,69 @@
+<navigator url="../info/info" hover-class="navigator-hover">
+<view class="info">
+  <!--头像-->
+  <view class='item info_left'>
+    <image class="userinfo-avatar" catchtap='chooseImageTap' src="{{user.avatarUrl}}" background-size="cover"></image>
+  </view>
+  <!--姓名-->
+  <view class="item info_right">
+    <view>{{user.nickName}}</view>
+    <view>{{sex}}</view>
+    <view>{{user.date}}</view>
+  </view>
+  <!--手机号码-->
+  <view class="item tel">
+    <view>手机号：{{user.tel}}</view>
+  </view>
+  <!--邮箱-->
+  <view class="item email">
+    <view>邮箱：{{user.email}}</view>
+  </view>
+</view>
+</navigator>
+<view class='eduList'>
+  <view class='eduTxt'>
+    <navigator url="../education/education" hover-class="navigator-hover">教育背景</navigator>
+  </view>
+  <!--输出循环 eduList begin-->
+  <view class="list" wx:for="{{eduList}}" wx:key="{{index}}">
+    <template is="eduList" data="{{...item}}" />
+  </view>
+  <!--输出循环 eduList end-->
+</view>
+<view class='expList'>
+  <view class='expTxt'>
+    <navigator url="../work/work" hover-class="navigator-hover">工作经历</navigator>
+  </view>
+  <!--输出循环 expList begin-->
+  <view class="list" wx:for="{{expList}}" wx:key="{{index}}">
+    <template is="expList" data="{{...item}}" />
+  </view>
+  <!--输出循环 expList end-->
+</view>
+
+<!--输出模板 eduList -->
+<template name="eduList">
+  <view class="list-item">
+    <view class="item i1">
+      <view class='school'>{{school}}</view>
+      <view class='specialities'>{{specialities}}</view>
+      <view class='qualifications'>{{qualifications}}</view>
+    </view>
+    <view class="item i2">
+      <text>毕业时间：</text>{{date}}
+    </view>
+  </view>
+</template>
+<!--输出模板 eduList -->
+
+<!--输出模板 expList -->
+<template name="expList">
+  <view class="list-item">
+    <view class="item i11">
+      <view class='company'>{{company}}</view>
+      <view class='position'>{{position}}</view>
+    </view>
+    <view class="item i21">{{entry}}--{{quit}}</view>
+  </view>
+</template>
+<!--输出模板 expList -->

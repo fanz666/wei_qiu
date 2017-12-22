@@ -1,0 +1,22 @@
+<view class="index-container">
+  <view class="container">
+    <view class="userinfo">
+        <image class="userinfo-avatar" catchtap='chooseImageTap' src="{{user.avatarUrl}}" background-size="cover"></image>  
+        <text class="userinfo-nickname">{{user.nickName}}</text>
+    </view>
+  </view>
+  <view class="userset">
+    <view bindtap="resumeClick" class="item ">
+      <text class="tl">我的简历</text>
+      <text class="t2">></text>
+    </view>
+    <view bindtap="applyForClick" class="item ">
+      <text class="tl">申请记录</text>
+      <text class="t2">></text>
+    </view>
+    <view bindtap="noticeClick" class="item ">
+      <text class="tl">通知</text>
+      <text class="t2">></text>
+    </view>
+  </view>
+</view>

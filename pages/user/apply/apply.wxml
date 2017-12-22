@@ -1,0 +1,17 @@
+<template name="lists">
+    <view class="list-item list-item-left">
+            <view class="item i1">{{company}}</view>
+            <view class="item i2">{{position}}</view>
+            <view class="item i3"><text>投递时间：</text>{{cTime}}
+            </view>
+    </view>
+    <view class="list-item list-item-right">
+      <!-- <view class="del" bindtap="del" id="{{id}}">删除</view> -->
+    </view>
+</template>
+
+<!--输出循环 begin-->
+<view class="list" wx:for="{{applyList}}" wx:key="{{index}}">
+   <template is="lists" data="{{...item}}" />
+</view>
+<!--输出循环 end-->

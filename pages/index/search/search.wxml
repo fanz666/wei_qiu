@@ -1,0 +1,39 @@
+<view class="search">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <input type="text" name="search" bindinput="searchInput" class="search-input" placeholder-class="input-place" placeholder="搜索职位" />
+    <button formType="submit" class="search-btn">搜索</button>
+  </form>
+</view>
+<view class='requrie'>
+  <button class='requrieBtn' bindtap="onChangeShowState">{{showView?'热门城市∧':'热门城市∨'}}</button>
+  <view class="requrieTxt">当前城市：<text class="requrieSh">{{requrie}}</text></view>
+  <view class="{{showView?'show':'hide'}}">
+    <view class='requrieList'>
+      <view class='requrieItem' wx:for="{{requrieList}}" wx:key="index" > 
+          <view bindtap='requrie' id="{{item.requrie}}">{{item.requrie}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<template name="lists">
+  <navigator url="../detail/detail?id={{id}}" hover-class="navigator-hover">
+    <view class="list-item list-item-left">
+      <image style="width:42px;height:42px;" src="{{img}}"></image>
+    </view>
+    <view class="list-item list-item-middle">
+      <view class="item i1">{{position}}</view>
+      <view class="item i2">{{company}}</view>
+      <view class="item i3"> {{cTime}}</view>
+    </view>
+    <view class="list-item list-item-right">
+      <view class="item i4">{{salary}}</view>
+      <view class="item i5">{{requrie}}</view>
+    </view>
+  </navigator>
+</template>
+<!--jobList end-->
+
+<!--输出循环 begin-->
+<view class="list" wx:for="{{jobList}}" wx:key="{{index}}">
+  <template is="lists" data="{{...item}}" />
+</view>

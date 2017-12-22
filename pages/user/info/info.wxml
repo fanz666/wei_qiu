@@ -1,0 +1,43 @@
+<!--start form-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="signup">
+    <!--姓名-->
+    <view class="item name">
+        <text> 姓名 </text>
+        <input name="nickName" value="{{user.nickName}}" bindinput="nickNameInput"/> 
+    </view>
+    <!--手机号码-->
+    <view class="item tel">
+        <text>手机号码</text>
+        <input name="tel" value="{{user.tel}}" bindinput="telInput"/>
+    </view>
+    <!--邮箱-->
+    <view class="item email">
+        <text>邮箱</text>
+        <input name="email" value="{{user.email}}" bindinput="emailInput"/>
+    </view>
+    <!--性别-->
+    <view class="item sex">
+        <text>性别</text>
+        <radio-group name="sex" >
+            <label><radio value="0" checked="{{checked}}"/>男</label>
+            <label><radio value="1" checked='{{checked2}}'/>女</label>
+        </radio-group>               
+    </view>
+    <!--出生年月-->
+    <view class="item date">  
+        <picker mode="date" start="1960-01-01" end="2017-09-01" fields="day" bindchange="bindDateChange">  
+            <view class="pickerDate">
+                <text>出生年月</text> 
+                 <input name="date" value="{{date}}" bindinput="dateInput"/> 
+            </view>             
+        </picker>  
+    </view>  
+</view>
+
+<view class="btn-area">
+  <button formType="submit">保存</button>
+</view>
+</form>
+<!--end form-->
+

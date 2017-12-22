@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/user/resume/resume",
+    "pages/user/form/form",
+    "pages/user/apply/apply",
+    "pages/user/notice/notice",
+    "pages/user/info/info",
+    "pages/user/education/education",
+    "pages/user/education/add/add",
+    "pages/user/work/work",
+    "pages/user/work/add/add",
+    "pages/index/detail/detail",
+    "pages/index/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "求职",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_curr.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "images/icon_user.png",
+        "selectedIconPath": "images/icon_user_curr.png"
+      }
+    ]
+  }
+}
