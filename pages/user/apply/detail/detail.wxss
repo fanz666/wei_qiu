@@ -1,0 +1,11 @@
+.detail{
+  width: 90%;
+  height: auto;
+  margin:4% 5%;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.default{
+  color: #595;
+}

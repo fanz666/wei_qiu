@@ -1,0 +1,30 @@
+<view class="detail">
+  <view class="item i1">{{applyList.company}}</view>
+  <view class="item i2">{{applyList.position}}</view>
+  <view class="item i3">
+    <view wx:if="{{applyList.progress == '1'}}" class='progress'>
+      <view class='default'>以到达 {{applyList.cTime}}</view>
+    </view>
+    <view wx:elif="{{applyList.progress == '2'}}" class='progress'>
+      <view>以到达 {{applyList.cTime}}</view>
+      <view class='default'>以到达 {{applyList.checkTime}}</view>
+    </view>
+    <view wx:elif="{{applyList.progress == '3'}}" class='progress'>
+      <view>以到达 {{applyList.cTime}}</view> 
+      <view>以到达 {{applyList.checkTime}}</view>}
+      <view class='default'>以到达 {{applyList.consultTime}}</view>
+    </view>
+    <view wx:elif="{{applyList.progress == '4'}}" class='progress'>
+      <view>以到达 {{applyList.cTime}}</view> 
+      <view>以到达 {{applyList.checkTime}}</view>}
+      <view>已查阅 {{applyList.consultTime}}</view>}
+      <view class='default'>以到达 {{applyList.intentionTime}}</view>
+    </view>
+    <view wx:elif="{{applyList.progress == '0'}}" class='progress'>
+      <view>以到达 {{applyList.cTime}}</view> 
+      <view>以到达 {{applyList.checkTime}}</view>}
+      <view>已查阅 {{applyList.consultTime}}</view>}
+      <view class='default'>以到达 {{applyList.noTime}}</view>
+    </view>
+  </view>
+</view>

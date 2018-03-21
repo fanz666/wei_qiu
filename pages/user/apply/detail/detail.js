@@ -4,7 +4,7 @@ Page({
     applyList: [],
   },
 
-  onLoad: function (res) {
+  onLoad: function (options) {
     var that = this;
     wx.getStorage({
       key: 'openid',
@@ -14,9 +14,10 @@ Page({
             var openid = res.data.openid;
             // console.log(openid);
             wx.request({
-              url: app.url + 'addon/QiuApply/QiuApply/getList',
+              url: app.url + 'addon/QiuApply/QiuApply/getDetail',
               data: {
                 "openid": openid,
+                id: options.id,
               },
               header: {
                 "content-type": "application/json"
@@ -24,7 +25,7 @@ Page({
               success: function (res) {
                 that.setData({
                   applyList: res.data,
-                })                
+                })
               }
             })
           }

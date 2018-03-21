@@ -5,6 +5,7 @@
     "pages/user/resume/resume",
     "pages/user/form/form",
     "pages/user/apply/apply",
+    "pages/user/apply/detail/detail",
     "pages/user/notice/notice",
     "pages/user/info/info",
     "pages/user/education/education",

@@ -1,17 +1,31 @@
 <template name="lists">
-    <view class="list-item list-item-left">
-            <view class="item i1">{{company}}</view>
-            <view class="item i2">{{position}}</view>
-            <view class="item i3"><text>投递时间：</text>{{cTime}}
-            </view>
+  <navigator url="detail/detail?id={{id}}">
+    <view class="list-item">
+      <view class="item i1">{{company}}</view>
+      <view class="item i2">{{position}}</view>
+      <view class="item i3">
+        <view wx:if="{{progress == '1'}}" class='progress'>
+          <text class='default'>以到达 {{cTime}}</text>
+        </view>
+        <view wx:elif="{{progress == '2'}}" class='progress'>
+          <text class='default'>已查收 {{checkTime}}</text>
+        </view>
+        <view wx:elif="{{progress == '3'}}" class='progress'>
+          <text class='default'>已查阅 {{consultTime}}</text>
+        </view>
+        <view wx:elif="{{progress == '4'}}" class='progress'>
+          <text class='default'>感兴趣 {{intentionTime}}</text>
+        </view>
+        <view wx:elif="{{progress == '0'}}" class='progress'>
+          <text class='default'>不合适 {{noTime}}</text>
+        </view>
+      </view>
     </view>
-    <view class="list-item list-item-right">
-      <!-- <view class="del" bindtap="del" id="{{id}}">删除</view> -->
-    </view>
+  </navigator>
 </template>
 
 <!--输出循环 begin-->
 <view class="list" wx:for="{{applyList}}" wx:key="{{index}}">
-   <template is="lists" data="{{...item}}" />
+  <template is="lists" data="{{...item}}" />
 </view>
 <!--输出循环 end-->
